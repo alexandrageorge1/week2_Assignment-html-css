@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeAcademy Pro – Learn. Build. Launch.</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-mark">C</div>
+        <span class="logo-text">CodeAcademy Pro</span>
+      </a>
+      <nav>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="nav-menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="courses.html" class="nav-cta">Enroll Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <span class="hero-badge">🎓 Trusted by 12,000+ students worldwide</span>
+        <h1>Learn to <span>Code</span> &amp; Build Real Products</h1>
+        <p>Professional-grade web development education. Master HTML, CSS, JavaScript, and modern frameworks with hands-on projects and expert mentorship.</p>
+        <div class="hero-buttons">
+          <a href="courses.html" class="btn btn-primary">Browse Courses →</a>
+          <a href="about.html" class="btn btn-secondary">Learn About Us</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/banner.jpg" alt="Students learning web development at CodeAcademy Pro" width="900" height="480" />
+      </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <div class="stats-bar">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <strong>12,000+</strong>
+          <span>Active Students</span>
+        </div>
+        <div class="stat-item">
+          <strong>40+</strong>
+          <span>Expert Instructors</span>
+        </div>
+        <div class="stat-item">
+          <strong>95%</strong>
+          <span>Job Placement Rate</span>
+        </div>
+        <div class="stat-item">
+          <strong>200+</strong>
+          <span>Courses Available</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURED COURSES -->
+    <section class="courses-preview">
+      <div class="section-header">
+        <span class="section-label">What We Offer</span>
+        <h2>Featured Courses</h2>
+        <p>Carefully crafted programs designed to take you from beginner to job-ready professional.</p>
+      </div>
+
+      <div class="courses-grid">
+
+        <article class="course-card">
+          <div class="course-card-img">
+            <img src="images/webdev.jpg" alt="Web Development Course" />
+          </div>
+          <div class="course-card-body">
+            <span class="course-tag">Beginner</span>
+            <h3>Web Development Fundamentals</h3>
+            <p>Build your foundation with HTML5, CSS3, and JavaScript. Create real-world projects from day one.</p>
+            <div class="course-meta">
+              <span>⏱ 12 Weeks</span>
+              <a href="courses.html" class="btn btn-secondary" style="padding:6px 14px; font-size:13px;">View Course</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <div class="course-card-img">
+            <img src="images/graphics.jpg" alt="UI/UX Design Course" />
+          </div>
+          <div class="course-card-body">
+            <span class="course-tag">Intermediate</span>
+            <h3>UI/UX Design Mastery</h3>
+            <p>Design beautiful, user-focused interfaces with Figma and apply modern UX principles.</p>
+            <div class="course-meta">
+              <span>⏱ 10 Weeks</span>
+              <a href="courses.html" class="btn btn-secondary" style="padding:6px 14px; font-size:13px;">View Course</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <div class="course-card-img">
+            <img src="images/data.jpg" alt="Data Analytics Course" />
+          </div>
+          <div class="course-card-body">
+            <span class="course-tag">Advanced</span>
+            <h3>Data Analytics &amp; Python</h3>
+            <p>Master data analysis, visualization, and machine learning fundamentals with Python.</p>
+            <div class="course-meta">
+              <span>⏱ 16 Weeks</span>
+              <a href="courses.html" class="btn btn-secondary" style="padding:6px 14px; font-size:13px;">View Course</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="courses-cta">
+        <a href="courses.html" class="btn btn-primary">See All Courses →</a>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="why-us">
+      <div class="section-header">
+        <span class="section-label">Why Choose Us</span>
+        <h2>Education Built for the Real World</h2>
+        <p>We don't just teach theory. We prepare you to actually get hired and thrive in your career.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3>Project-Based Learning</h3>
+          <p>Build a professional portfolio of real projects employers actually care about. Every course ends with a deployable product.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">👩‍💻</div>
+          <h3>Expert Instructors</h3>
+          <p>Learn from working professionals with years of industry experience at top tech companies and startups.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌐</div>
+          <h3>Learn Anywhere</h3>
+          <p>Fully flexible online courses you can take on your schedule. Access lifetime materials from any device, anytime.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🤝</div>
+          <h3>Career Support</h3>
+          <p>Resume reviews, mock interviews, and a job placement network connecting you with hiring partners globally.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📜</div>
+          <h3>Recognized Certificates</h3>
+          <p>Earn certificates recognized by top employers. Share them on LinkedIn to stand out in a competitive job market.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💬</div>
+          <h3>Community &amp; Mentors</h3>
+          <p>Join a thriving community of learners. Get code reviews, ask questions, and collaborate on projects 24/7.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-mark">C</div>
+          <span class="logo-text">CodeAcademy Pro</span>
+        </a>
+        <p>Empowering the next generation of developers and designers with practical, real-world education.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="https://developer.mozilla.org" target="_blank" rel="noopener">MDN Web Docs</a></li>
+          <li><a href="https://www.w3schools.com" target="_blank" rel="noopener">W3Schools</a></li>
+          <li><a href="https://css-tricks.com" target="_blank" rel="noopener">CSS-Tricks</a></li>
+          <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://twitter.com" target="_blank" rel="noopener">Twitter / X</a></li>
+          <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://discord.com" target="_blank" rel="noopener">Discord</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2025 CodeAcademy Pro. All rights reserved.</span>
+      <span>Built with HTML, CSS &amp; ❤️</span>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-menu');
+      menu.classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>

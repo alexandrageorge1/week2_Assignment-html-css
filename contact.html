@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us – CodeAcademy Pro</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-mark">C</div>
+        <span class="logo-text">CodeAcademy Pro</span>
+      </a>
+      <nav>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="contact.html" class="nav-cta">Enroll Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <span class="section-label">Reach Out</span>
+      <h1>Contact Us</h1>
+      <p>Have questions about a course, enrollment, or anything else? We'd love to hear from you.</p>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section">
+      <div class="contact-layout">
+
+        <!-- LEFT: Contact Info -->
+        <aside>
+          <h2>Get in Touch</h2>
+          <p>Our team is here Monday to Friday, 9am – 6pm. We typically respond to all inquiries within 24 hours.</p>
+
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div class="contact-item-text">
+              <strong>Email</strong>
+              <span>hello@codeacademypro.com</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div class="contact-item-text">
+              <strong>Phone</strong>
+              <span>+1 (555) 012-3456</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div class="contact-item-text">
+              <strong>Address</strong>
+              <span>123 Learning Lane, Toronto, ON, Canada</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">⏰</div>
+            <div class="contact-item-text">
+              <strong>Office Hours</strong>
+              <span>Mon – Fri: 9:00 AM – 6:00 PM EST</span>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-links">
+            <h4>Follow Us</h4>
+            <div class="social-row">
+              <a href="https://twitter.com" target="_blank" rel="noopener" class="social-link">🐦 Twitter</a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link">💼 LinkedIn</a>
+              <a href="https://youtube.com" target="_blank" rel="noopener" class="social-link">▶️ YouTube</a>
+              <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link">📸 Instagram</a>
+              <a href="https://discord.com" target="_blank" rel="noopener" class="social-link">💬 Discord</a>
+            </div>
+          </div>
+        </aside>
+
+        <!-- RIGHT: Contact Form -->
+        <div class="contact-form-card">
+          <h3>Send Us a Message</h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first-name" placeholder="John" required />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last-name" placeholder="Doe" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number (Optional)</label>
+            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">What Can We Help With?</label>
+            <select id="subject" name="subject">
+              <option value="" disabled selected>Select a topic...</option>
+              <option value="enrollment">Course Enrollment</option>
+              <option value="info">Course Information</option>
+              <option value="payment">Payment &amp; Pricing</option>
+              <option value="technical">Technical Support</option>
+              <option value="career">Career Services</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" placeholder="Tell us how we can help you..." required></textarea>
+          </div>
+
+          <button type="button" class="btn btn-primary" style="width:100%; justify-content:center;" onclick="handleSubmit()">
+            Send Message →
+          </button>
+
+          <p style="font-size:13px; color:var(--color-text-muted); margin-top:16px; text-align:center;">
+            We'll get back to you within 24 hours. Promise.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section style="background-color: var(--color-surface); padding: 80px 24px;">
+      <div class="section-header">
+        <span class="section-label">FAQ</span>
+        <h2>Common Questions</h2>
+        <p>Quick answers to what most students ask us.</p>
+      </div>
+
+      <div style="max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px;">
+
+        <div style="background: var(--color-surface-2); border: 1px solid var(--color-border); border-radius: 12px; padding: 24px;">
+          <h4 style="font-family: var(--font-display); color: var(--color-white); margin-bottom: 8px;">Do I need prior coding experience?</h4>
+          <p style="color: var(--color-text-muted); font-size: 14px;">No experience needed for our beginner courses. We start from absolute zero and guide you step by step.</p>
+        </div>
+
+        <div style="background: var(--color-surface-2); border: 1px solid var(--color-border); border-radius: 12px; padding: 24px;">
+          <h4 style="font-family: var(--font-display); color: var(--color-white); margin-bottom: 8px;">Are courses fully online and self-paced?</h4>
+          <p style="color: var(--color-text-muted); font-size: 14px;">Yes! All courses are 100% online. You can move at your own pace and access all materials anytime, on any device.</p>
+        </div>
+
+        <div style="background: var(--color-surface-2); border: 1px solid var(--color-border); border-radius: 12px; padding: 24px;">
+          <h4 style="font-family: var(--font-display); color: var(--color-white); margin-bottom: 8px;">Do certificates have an expiry date?</h4>
+          <p style="color: var(--color-text-muted); font-size: 14px;">No. Your certificate never expires and is yours to keep and share forever on LinkedIn, resumes, or portfolios.</p>
+        </div>
+
+        <div style="background: var(--color-surface-2); border: 1px solid var(--color-border); border-radius: 12px; padding: 24px;">
+          <h4 style="font-family: var(--font-display); color: var(--color-white); margin-bottom: 8px;">Is there a refund policy?</h4>
+          <p style="color: var(--color-text-muted); font-size: 14px;">We offer a 30-day money-back guarantee on all courses, no questions asked. Your satisfaction is our priority.</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-mark">C</div>
+          <span class="logo-text">CodeAcademy Pro</span>
+        </a>
+        <p>Empowering the next generation of developers and designers with practical, real-world education.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="https://developer.mozilla.org" target="_blank" rel="noopener">MDN Web Docs</a></li>
+          <li><a href="https://www.w3schools.com" target="_blank" rel="noopener">W3Schools</a></li>
+          <li><a href="https://css-tricks.com" target="_blank" rel="noopener">CSS-Tricks</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://twitter.com" target="_blank" rel="noopener">Twitter / X</a></li>
+          <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 CodeAcademy Pro. All rights reserved.</span>
+      <span>Built with HTML, CSS &amp; ❤️</span>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-menu').classList.toggle('open');
+    }
+
+    function handleSubmit() {
+      alert('Thank you for your message! We\'ll get back to you within 24 hours.');
+    }
+  </script>
+</body>
+</html>
